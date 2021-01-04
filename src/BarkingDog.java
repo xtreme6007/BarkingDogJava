@@ -5,17 +5,17 @@ public class BarkingDog {
         if (hourOfDay < 0  || hourOfDay > 23) {
             return false;
         }
-        if (((hourOfDay < 8 && hourOfDay > 0  ) || (hourOfDay > 22 && hourOfDay < 23)) && isBarking == true) {
+        if (((hourOfDay < 8 && hourOfDay >= 0  ) || (hourOfDay > 22 && hourOfDay <= 23)) && isBarking == true) {
             return true;
         } else {
             return false;
         }
 
 
-        }
+    }
 
 
 
 
     }
-}
+
